@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://www.chsi.com.cn/xlcx/bg.do?vcode=130181783701&srcid=qrcode -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>教育部学历证书电子注册备案表</title>
+    <link rel="stylesheet" type="text/css" href="./asset/materialize.min.css">
+    <link rel="stylesheet" href="./asset/wap_md.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="pw-content">
+            <div class="container">
+                <div class="row valign-wrapper padTop" id="xl-top">
+                    <script type="text/javascript" src="./asset/jquery.min.js.下载"></script>
+                    <script type="text/javascript" src="./asset/materialize.min.js.下载"></script>
+                    <div class="col s9  ">
+                        <script>
+                        $(document).ready(function() {
+                            sel_lang();
+                        });
+
+                        function sel_lang() {
+                            var srcid = "qrcode";
+                            var srcidParam = srcid.length == 0 ? "" : "&srcid=" + srcid;
+                            $("#change_label").on("click", function() {
+                                if ($("#change_lang").is(":checked")) {
+                                    //英文
+                                    window.location.href = "http://www.chsi.com.cn/xlcx/bg.do?vcode=130181783701&ln=en" + srcidParam;
+                                } else {
+                                    //中文
+                                    window.location.href = "http://www.chsi.com.cn/xlcx/bg.do?vcode=130181783701&ln=cn" + srcidParam;
+                                }
+                            });
+                            if ($("#change_lang").attr("checked") == "checked") {
+                                $('.lever-cilcle').css("left", "24px");
+                            } else {
+                                $('.lever-cilcle').css("left", "-5px");
+                            }
+                        }
+                        </script>
+                        <div class="switch noenEn">报告语种：
+                            <label><a href="http://www.chsi.com.cn/xlcx/bg.do?vcode=130181783701&amp;ln=cn&amp;srcid=qrcode">中文</a>
+                                <input disabled="" type="checkbox">
+                                <a class="modal-trigger" href="http://www.chsi.com.cn/xlcx/bg.do?vcode=130181783701&amp;srcid=qrcode#noenreport"><span class="new-lever"><span class="lever-cilcle" style="left: -5px;"></span></span>英文</a>
+                            </label>
+                        </div>
+                        <div id="noenreport" class="modal" style="width:90%">
+                            <div class="modal-content" style="padding-bottom:0">
+                                该备案表尚无对应的英文版，<span onclick="window.location.href=&#39;/xlcx/rhsq.jsp#rhsqxl_en&#39;" class="nr-detail">如何申请</span>
+                            </div>
+                            <div class="modal-footer">
+                                <span class=" modal-action modal-close btn-flat">关闭</span>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                        /* $(function() {
+                                                $("#openerHref").click(function(){
+                                                    $("#noenreport").show();
+                                                    $('.pw-chooseLan').find('a').removeClass('current').end().end().find('#openerHref').addClass('current');
+                                                    return false;
+                                                });
+                                                $(window.document||window.document.body).click(function(){
+                                                    var $dialog = $('#noenreport:not(:hidden)');
+                                                    if($dialog.length!=0){
+                                                        $dialog.hide().prev('#openerHref').removeClass('current');
+                                                        $('.pw-chooseLan a:eq(0)').addClass('current');
+                                                    }    
+                                                });
+                                            });*/
+                        $(function() {
+                            $('.modal-trigger').leanModal({
+                                dismissible: true, // 点击模态框外部则关闭模态框
+                                opacity: 0, // 背景透明度
+                                in_duration: 300, // 切入时间
+                                out_duration: 200, // 切出时间
+                            });
+                        });
+                        </script>
+                    </div>
+                    <script>
+                    Date.prototype.format = function(format) {
+                        var date = {
+                            "M+": this.getMonth() + 1,
+                            "d+": this.getDate(),
+                            "h+": this.getHours(),
+                            "m+": this.getMinutes(),
+                            "s+": this.getSeconds(),
+                            "q+": Math.floor((this.getMonth() + 3) / 3),
+                            "S+": this.getMilliseconds()
+                        };
+                        if (/(y+)/i.test(format)) {
+                            format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+                        }
+                        for (var k in date) {
+                            if (new RegExp("(" + k + ")").test(format)) {
+                                format = format.replace(RegExp.$1, RegExp.$1.length == 1 ?
+                                    date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+                            }
+                        }
+                        return format;
+                    }
+                    $(function() {
+                        var wechatInfo = navigator.userAgent.match(/MicroMessenger\/([\d\.]+)/i);
+                        if (wechatInfo) {
+                            $('.switch').hide();
+                        }
+                    })
+                    </script>
+                    <!--<div class='pw-info-pc'><a href="/xlcx/bg.do?vcode=130181783701&amp;ln=cn&amp;lang=cn&goto=pc">电脑版</a></div> -->
+                    <div class="col s3 ">
+                        <img src="./asset/search_pdf.png" alt="下载PDF" title="下载PDF" onclick="window.location.href=&#39;/report/xueli/download.do?vcode=130181783701&amp;rid=59871697522590307003727540795645&amp;ln=cn&#39;" class="responsive-img waves-effect waves-teal right z-depth-1 down_psf">
+                    </div>
+                </div>
+                <h5 class="center-align padBot">教育部学历证书电子注册备案表</h5>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <img class="waves-effect waves-teal z-depth-1 h_img_size" id="xueliPhoto" src="./asset/859871269l752f25903ce070037d2f7540f7956453.png" data-caption="个人头像">
+                    </div>
+                </div>
+            </div>
+            <div class="collection card">
+                <div class="row collection-item">
+                    <div class="col s4 bolder">姓名：</div>
+                    <div class="col s8">张军英</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">性别：</div>
+                    <div class="col s8">女</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">出生日期：</div>
+                    <div class="col s8">1995年3月5日</div>
+                </div>
+            </div>
+            <div class="collection card">
+                <div class="row collection-item">
+                    <div class="col s4 bolder">入学时间：</div>
+                    <div class="col s8">2010年9月1日</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">毕业时间：</div>
+                    <div class="col s8">2014年6月10日</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">学历类型：</div>
+                    <div class="col s8">普通</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">学历层次：</div>
+                    <div class="col s8">本科</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">毕业院校：</div>
+                    <div class="col s8">湖南农业大学</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">院校所在地：</div>
+                    <div class="col s8">湖南省</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">专业名称：</div>
+                    <div class="col s8">计算机科学与技术</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">学习形式：</div>
+                    <div class="col s8">普通全日制</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">证书编号：</div>
+                    <div class="col s8">1053 7520 1405 0101 81</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">毕结业结论：</div>
+                    <div class="col s8">毕业</div>
+                </div>
+            </div>
+            <div class="collection card">
+                <div class="row collection-item">
+                    <div class="col s4 bolder">在线验证码：</div>
+                    <div class="col s8">1301 8178 3701</div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">制表日期：</div>
+                    <div class="col s8"> <script>
+                    	document.write(new Date().format('yyyy年MM月dd日'));
+                    </script> </div>
+                </div>
+                <div class="row collection-item">
+                    <div class="col s4 bolder">验证期至：</div>
+                    <div class="col s8">2018年4月23日</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hiddendiv common"></div>
+</body>
+
+</html>

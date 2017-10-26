@@ -1,0 +1,6 @@
+{ 
+  "src_dir": "./www", 
+  "bucket": "zjy1", 
+  "overwrite": true, 
+  "rescan_local": true 
+}
